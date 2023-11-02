@@ -44,13 +44,6 @@ function createCard(card) {
     })
   });
 
-  //adding the keyup listener for search bar
-  const searchInput = document.getElementById('search-input');
-  searchInput.addEventListener('keyup', function () {
-    const searchTerm = searchInput.value;
-    displayCards(searchTerm);
-  })
-
   return cardHTML; 
 }
 
@@ -65,4 +58,10 @@ function displayCards(searchTerm) {
 }
 document.addEventListener("DOMContentLoaded", () => {
   displayCards();
+  //adding the keyup listener for search bar
+  const searchInput = document.getElementById("search-input");
+  searchInput.addEventListener("keyup", function () {
+    const searchTerm = searchInput.value;
+    displayCards(searchTerm);
+  });
 });
