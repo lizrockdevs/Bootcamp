@@ -200,5 +200,6 @@ You can get the `data-id` to identify which `product-name` the user clicked usin
 // Get the id of the target
 const id = Number(ev.currentTarget.getAttribute("data-id"));
 ```
-#   B o o t c a m p  
+#   B o o t c a m p 
+ 
  
